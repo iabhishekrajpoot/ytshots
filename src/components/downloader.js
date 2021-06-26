@@ -19,7 +19,7 @@ export default class ButtonLoader extends Component {
   };
 
   fetchData = async() => {
-   await fetch("https://api.shortsloader.com/videoInfo?videoURL="+this.state.url)
+   await fetch("https://api.probhai.com/videoInfo?videoURL="+this.state.url)
       .then(res => res.json())
       .then(
         (result) => {
@@ -65,10 +65,10 @@ export default class ButtonLoader extends Component {
     
 //  };
 const downloadVideo = () => {
-        window.open(`https://api.shortsloader.com/download?videoURL=${this.state.url}`, "_self");     
+        window.open(`https://api.probhai.com/download?videoURL=${this.state.url}`, "_self");     
     }
     const downloadAudio = () => {
-        window.open(`https://api.shortsloader.com/audio/download?videoURL=${this.state.url}`, "_self");     
+        window.open(`https://api.probhai.com/audio/download?videoURL=${this.state.url}`, "_self");     
     }
    // let color = items.statu < 10 ? 'zero' : (items.statu <= 30 ? 'searchbtn' : 'searchbtn');
 
