@@ -13,14 +13,13 @@ export default class ButtonLoader extends Component {
   state = {
     error: 'Error',
     loading: false,
-    isLoaded: false,
     items: [],
     url: '',
     validated: false
   };
 
-  fetchData = () => {
-    fetch("https://ytshot.cretic.co.in/download?url="+this.state.url)
+  fetchData = async() => {
+   await fetch("http://143.110.177.128/videoInfo?videoURL="+this.state.url)
       .then(res => res.json())
       .then(
         (result) => {
@@ -45,14 +44,11 @@ export default class ButtonLoader extends Component {
     setTimeout(() => {
       this.setState({ loading: false });
     }, 2000);
-   setTimeout(() => {
-      this.setState({ isLoaded:  true });
-    }, 2100);
     
   };
   
   clear = () => {
-    this.setState({ items: ''})
+    this.setState({ loading: true})
   }
 
   render() {
@@ -63,23 +59,23 @@ export default class ButtonLoader extends Component {
    const {validated} = this.state;
    const {error} = this.state;
    
-   //console.log(error);
+   console.log(items);
   //  let color = items.length < 1 ? 'zero' : (items.length <= 30 ? '' : '');
   //const handleSubmit = (event) => {
     
 //  };
 const downloadVideo = () => {
-        window.open(`https://ytshot.cretic.co.in/video/video?url=${this.state.url}`, "_self");     
+        window.open(`http://143.110.177.128/download?videoURL=${this.state.url}`, "_self");     
     }
     const downloadAudio = () => {
-        window.open(`https://ytshot.cretic.co.in/audio/audio?url=${this.state.url}`, "_self");     
+        window.open(`http://143.110.177.128/audio/download?videoURL=${this.state.url}`, "_self");     
     }
    // let color = items.statu < 10 ? 'zero' : (items.statu <= 30 ? 'searchbtn' : 'searchbtn');
 
     return (
       <div>
       <h1 className="h1-font">YouTube Shorts Downloader</h1>
-           <Container>
+      <Container>
        <Row>
        <Col xs={12} md={12}>
        <Form noValidate validated={this.state.validated}>
@@ -101,7 +97,6 @@ const downloadVideo = () => {
       <Col xs={12} md={12}>
         <button 
         disabled={this.state.url.length<13}
-        type="submit"
         style={{
         borderRadius: 35,
         backgroundColor: "#FF0000",
@@ -124,18 +119,16 @@ const downloadVideo = () => {
           </Col>
         </Row>
        </Container>
-        {loading && <LoadingBar/>}
+        
        <h3
-        style={{
-        display: loading ? "none" : ""
-        }}
+        //style={{
+      //  display: loading ? "none" : ""
+      //  }}
         className="mt-5"> {items.title} </h3>
        <ReactPlayer 
           className="mb-3"
-          style={{
-            display: loading ? "none" : ""
-           }}
-          url={items.videolink} 
+          
+          url={items.url} 
           width="100%" height="50%" 
           controls={true} />
           <Button 
