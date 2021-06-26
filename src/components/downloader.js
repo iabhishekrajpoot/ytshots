@@ -19,7 +19,7 @@ export default class ButtonLoader extends Component {
   };
 
   fetchData = async() => {
-   await fetch("http://143.110.177.128/videoInfo?videoURL="+this.state.url)
+   await fetch("https://api.shortsloader.com/videoInfo?videoURL="+this.state.url)
       .then(res => res.json())
       .then(
         (result) => {
@@ -65,10 +65,10 @@ export default class ButtonLoader extends Component {
     
 //  };
 const downloadVideo = () => {
-        window.open(`http://143.110.177.128/download?videoURL=${this.state.url}`, "_self");     
+        window.open(`https://api.shortsloader.com/download?videoURL=${this.state.url}`, "_self");     
     }
     const downloadAudio = () => {
-        window.open(`http://143.110.177.128/audio/download?videoURL=${this.state.url}`, "_self");     
+        window.open(`https://api.shortsloader.com/audio/download?videoURL=${this.state.url}`, "_self");     
     }
    // let color = items.statu < 10 ? 'zero' : (items.statu <= 30 ? 'searchbtn' : 'searchbtn');
 
