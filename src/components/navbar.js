@@ -110,7 +110,7 @@ class ResAppBar extends Component{
     return (
       <AppBar className = {this.props.classes.appBar}>
         <Toolbar>
-          <Typography className = {this.props.classes.Tlogo} variant = "headline" style={{flexGrow:1}} color="inherit" >YtShots</Typography>
+          <Typography className = {this.props.classes.Tlogo} variant = "h4" style={{flexGrow:1}} color="inherit" >Shortsloader</Typography>
           <Typography variant = "subheading" className = {classes.padding} color="inherit" >
           <Link to="/">
            Home</Link>
