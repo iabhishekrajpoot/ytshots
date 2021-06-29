@@ -5,7 +5,7 @@ export default function Intro (props) {
     <Fragment>
       <h2 className="mt-5">Download YouTube Shorts Video – Online shorts video downloader</h2>
       <hr class="soli"/>
-      <p className="heading-2 word">Shortsloader is an online tool which helps you to download or convert Youtube videos and YouTube Shorts videos in Mp4 video or Mp3 audio format. It's easy, free and fast tool by which you can download and save videos directly to your phone or computer.</p>
+      <p className="heading-2 word">Shortsloader is an tool which helps you to download or convert Youtube shorts videos and YouTube videos in Mp4 video or Mp3 audio format. It's easy, free and fast tool by which you can download and save shorts videos directly to your phone or computer.</p>
       <p className="heading-2 word">We don't require any information for accessing our tool, so you don't need to worry about providing login credentials. Our services are totally free which can be used to download unlimited amount of Shorts videos. We provide one of the best YouTube shorts video downloader online services in simplest and easy way.</p>
       <hr/>
       <h2 className="heading-2">Key features:</h2>
@@ -16,19 +16,19 @@ export default function Intro (props) {
          <li>Unlimited usage, our tool can be used to download unlimited youtube videos & shorts videos online.</li>
         </ol>
       <hr/>
-      <h2 className="heading-2">How to Download YouTube Shorts Videos?</h2>
+      <h2 className="heading-2">How to Download YouTube Shorts Video?</h2>
       <ul className="heading-2">
-       <li><strong>Step 1.</strong> Copy video link or URL. </li>
+       <li><strong>Step 1.</strong> Copy link/Url of the Shorts video that you want to download</li>
        <li><strong> Step 2.</strong> Paste the Link into the input field on Shortsloader.com</li>
-       <li><strong>Step 3.</strong> Click the download button, after processing.</li>
+       <li><strong>Step 3.</strong> Click the download button, After processing.</li>
        <li><strong>Step 4.</strong> Done! Download your YouTube Shorts Videos in Mp4 or Mp3.</li>
       </ul>
     <hr/>
-    <h2 className="heading-2">How to copy YouTube Shorts Video Link??</h2>
+    <h2 className="heading-2">How to copy YouTube Shorts Video Link?</h2>
       <ul className="heading-2">
-       <li><strong>Step 1.</strong> Open Shorts in YouTube.</li>
+       <li><strong>Step 1.</strong> Open Shorts in YouTube App.</li>
        <li><strong> Step 2.</strong> Click on share icon, located at bottom right corner.</li>
-       <li><strong>Step 3.</strong> Now click on Copy Link.</li>
+       <li><strong>Step 3.</strong> Now click on Copy Link button.</li>
        <li><strong>Step 4.</strong> Your Shorts video URL/Link has been copied.</li>
       </ul>
       <hr/>
