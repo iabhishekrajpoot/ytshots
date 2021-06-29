@@ -67,7 +67,7 @@ class ResAppBar extends Component{
                 className = {this.props.classes.sideBarIcon}
                 onClick={()=>{this.setState({drawer:true})}} />
 
-              <Typography className = {this.props.classes.Tlogo} color="inherit" variant = "h3">ShortsLoader</Typography>
+              <Typography className = {this.props.classes.Tlogo} color="inherit" variant = "h4">ShortsLoader</Typography>
               <Typography color="inherit" variant = "headline"></Typography>
             </Grid>
           </Toolbar>
