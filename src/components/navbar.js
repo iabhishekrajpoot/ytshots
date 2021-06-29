@@ -28,7 +28,7 @@ const styleSheet = {
     fontFamily: 'Poppins',
   },
  Tlogo : {
-    textAlign: "center",
+    textAlign: "left",
     fontFamily: 'Poppins',
   },
 }
@@ -67,7 +67,7 @@ class ResAppBar extends Component{
                 className = {this.props.classes.sideBarIcon}
                 onClick={()=>{this.setState({drawer:true})}} />
 
-              <Typography className = {this.props.classes.Tlogo} color="inherit" variant = "h4">ShortsLoader</Typography>
+              <Typography className = {this.props.classes.Tlogo} color="inherit" variant = "h3">ShortsLoader</Typography>
               <Typography color="inherit" variant = "headline"></Typography>
             </Grid>
           </Toolbar>
@@ -110,7 +110,7 @@ class ResAppBar extends Component{
     return (
       <AppBar className = {this.props.classes.appBar}>
         <Toolbar>
-          <Typography className = {this.props.classes.Tlogo} variant = "h4" style={{flexGrow:1}} color="inherit" >Shortsloader</Typography>
+          <Typography className = {this.props.classes.Tlogo} variant = "h3" style={{flexGrow:1}} color="inherit" >Shortsloader</Typography>
           <Typography variant = "subheading" className = {classes.padding} color="inherit" >
           <Link to="/">
            Home</Link>
