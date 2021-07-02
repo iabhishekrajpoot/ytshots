@@ -3,6 +3,9 @@
 *{
   
 }
+rect {
+  fill: #fff;
+}
 .App {
   padding-top: 70px;
   text-align: center;
