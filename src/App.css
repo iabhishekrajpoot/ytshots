@@ -17,7 +17,8 @@ input[type="url"] {
   border-color: #FF0000;
   font-family: 'Poppins', sans-serif;
 }
-rect {
+
+.container rect {
   fill: #fff;
 }
 .card {
