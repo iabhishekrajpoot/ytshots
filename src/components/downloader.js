@@ -43,7 +43,7 @@ export default class ButtonLoader extends Component {
     //Faking API call here
     setTimeout(() => {
       this.setState({ loading: false });
-    }, 200);
+    }, 100);
     
   };
   
@@ -114,7 +114,7 @@ const downloadVideo = () => {
             />
           )}
           {loading && <span>Loading... <span>
-  <svg width="28" viewBox="0 0 100 60">
+  <svg width="30" viewBox="0 0 100 60">
     <rect x="0" y="0" width="10" height="60" rx="6">
       <animate attributeType="CSS" 
                attributeName="height" 
