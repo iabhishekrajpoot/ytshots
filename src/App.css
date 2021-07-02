@@ -17,10 +17,6 @@ input[type="url"] {
   border-color: #FF0000;
   font-family: 'Poppins', sans-serif;
 }
-
-.container rect {
-  fill: #fff;
-}
 .card {
   height: 40vh;
 }
