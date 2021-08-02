@@ -14,7 +14,8 @@ export default function Intro (props) {
          <li>Compatible with all devices, can be used to download videos on any device. i.e Phone, Tablet, iOS or PC.</li>
          <li>It is lifetime free service, we do not charge anything for our services. We might place some ads on it which supports maintenance of our services.</li>
          <li>Unlimited usage, our tool can be used to download unlimited youtube videos & shorts videos online.</li>
-        </ol>
+         <li>Our website can download or convert youtube videos and yt shorts to mp4 video and mp3 video format.</li>
+    </ol>
       <hr/>
       <h2 className="heading-2">How to Download YouTube Shorts Video?</h2>
       <ul className="heading-2">
