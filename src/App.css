@@ -132,7 +132,11 @@ hr.soli {
 h2 {
   font-family: 'Poppins', sans-serif;
 }
-
+.videocenter{
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 .nav_link {
   text-decoration: none;
 }
