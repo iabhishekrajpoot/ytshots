@@ -202,7 +202,7 @@ const downloadVideo = () => {
           className="mb-3 videocenter"
           
           url={items.url} 
-          width="90%%" height="50%" 
+          width="90%" height="50%" 
           controls={true} />
           <Button 
              variant="contained" 
