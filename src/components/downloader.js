@@ -65,10 +65,10 @@ export default class ButtonLoader extends Component {
     
 //  };
 const downloadVideo = () => {
-        window.open(`https://api.instavideosave.net/download?videoURL=${this.state.url}`, "_self");     
+        window.open(`https://shortsloader.instavideosave.com/download?videoURL=${this.state.url}`, "_self");     
     }
     const downloadAudio = () => {
-        window.open(`https://api.instavideosave.net/audio/download?videoURL=${this.state.url}`, "_self");     
+        window.open(`https://shortsloader.instavideosave.com/audio/download?videoURL=${this.state.url}`, "_self");     
     }
    // let color = items.statu < 10 ? 'zero' : (items.statu <= 30 ? 'searchbtn' : 'searchbtn');
 
