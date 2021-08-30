@@ -19,7 +19,7 @@ export default class ButtonLoader extends Component {
   };
 
   fetchData = async() => {
-   await fetch("https://api.instavideosave.net/videoInfo?videoURL="+this.state.url)
+   await fetch("https://shortsloader.instavideosave.com/videoInfo?videoURL="+this.state.url)
       .then(res => res.json())
       .then(
         (result) => {
