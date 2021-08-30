@@ -75,6 +75,7 @@ const downloadVideo = () => {
     return (
       <div>
       <h1 className="h1-font">YouTube Shorts Downloader</h1>
+      <p>Download youtube shorts online for free to your device.</p>
       <Container>
        <Row>
        <Col xs={12} md={12}>

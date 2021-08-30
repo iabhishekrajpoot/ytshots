@@ -3,7 +3,7 @@ import React, {Fragment} from 'react';
 export default function Intro (props) {
   return (
     <Fragment>
-      <h2 className="mt-5">Download YouTube Shorts Video – Online shorts video downloader</h2>
+      <h2 className="mt-5">Download youTube shorts video online</h2>
       <hr class="soli"/>
       <p className="heading-2 word">Shortsloader.com is a web app which helps you to download or convert Youtube shorts video to Mp4 video or Mp3 audio format. It's easy, free and fast tool by which you can download and save shorts videos directly to your phone or computer.</p>
       <p className="heading-2 word">We don't require any information for accessing our tool, so you don't need to worry about providing login credentials. Our services are totally free which can be used to download unlimited amount of Shorts videos. We provide one of the best YouTube shorts video downloader online services in simplest and easy way.</p>
