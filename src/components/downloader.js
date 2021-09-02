@@ -88,7 +88,7 @@ const downloadVideo = () => {
         onChange={(event) => this.setState({ url: event.target.value })}
         //onChange={event => this.setSate(event.target.value)}
         type="url" 
-        placeholder="Paste link here" />
+        placeholder="Paste link here ..." />
       <Form.Control.Feedback type="invalid">
             Please provide a valid URL
       </Form.Control.Feedback>
