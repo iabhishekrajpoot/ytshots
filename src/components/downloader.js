@@ -19,7 +19,7 @@ export default class ButtonLoader extends Component {
   };
 
   fetchData = async() => {
-   await fetch("https://shortsloader.instavideosave.com/videoInfo?videoURL="+this.state.url)
+   await fetch("https://shortsloader-api.herokuapp.com/videoInfo?videoURL="+this.state.url)
       .then(res => res.json())
       .then(
         (result) => {
@@ -65,10 +65,10 @@ export default class ButtonLoader extends Component {
     
 //  };
 const downloadVideo = () => {
-        window.open(`https://shortsloader.instavideosave.com/download?videoURL=${this.state.url}`, "_self");     
+        window.open(`https://shortsloader-api.herokuapp.com/download?videoURL=${this.state.url}`, "_self");     
     }
     const downloadAudio = () => {
-        window.open(`https://shortsloader.instavideosave.com/audio/download?videoURL=${this.state.url}`, "_self");     
+        window.open(`https://shortsloader-api.herokuapp.com/audio/download?videoURL=${this.state.url}`, "_self");     
     }
    // let color = items.statu < 10 ? 'zero' : (items.statu <= 30 ? 'searchbtn' : 'searchbtn');
 
