@@ -74,7 +74,7 @@ const downloadVideo = () => {
         )
         .replace(/\s+/g, "-")
         .toLowerCase()
-        .slice(0, 18) ?? items.title }`, "_self");     
+        .slice(0, 22) ?? items.title }`, "_self");     
     }
    // let color = items.statu < 10 ? 'zero' : (items.statu <= 30 ? 'searchbtn' : 'searchbtn');
 
@@ -204,7 +204,7 @@ const downloadVideo = () => {
         //style={{
       //  display: loading ? "none" : ""
       //  }}
-        className="mt-5"> {items.title} </h3>
+        className="mt-3 title"> {items.title} </h3>
        <ReactPlayer 
           className="mb-1 videocenter"
           
@@ -240,7 +240,7 @@ const downloadVideo = () => {
                  marginTop: "10px"
                  }}
                  className="searchbtn"
-                 > <AudiotrackIcon /> Download Audio
+                 > <AudiotrackIcon /> Download Mp3
     </Button>
       </div>
     );
