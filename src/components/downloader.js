@@ -206,7 +206,7 @@ const downloadVideo = () => {
       //  }}
         className="mt-5"> {items.title} </h3>
        <ReactPlayer 
-          className="mb-3 videocenter"
+          className="mb-1 videocenter"
           
           url={items.url} 
           width="80%" height="50%" 
