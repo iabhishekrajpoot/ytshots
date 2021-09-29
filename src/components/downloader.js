@@ -69,19 +69,19 @@ const downloadVideo = () => {
     }
     const downloadAudio = () => {
         window.open(`https://powerful-forest-52012.herokuapp.com/download?videoId=${this.state.url}&type=mp3&itag=140downloadFormat=audio-only&quality=highest&title=${items.title .replace(
-          /[`~!@#$%^&*()_|+\-=?;:–'",.<>\{\}\[\]\\\/]/gi,
+          /[`~!@#$%^&*()_|+\-=?;:–1234567890'",.<>\{\}\[\]\\\/]/gi,
           ""
         )
         .replace(/\s+/g, "-")
         .toLowerCase()
-        .slice(0, 22) ?? items.title }`, "_self");     
+        .slice(0, 20) ?? items.title }`, "_self");     
     }
    // let color = items.statu < 10 ? 'zero' : (items.statu <= 30 ? 'searchbtn' : 'searchbtn');
 
     return (
       <div>
       <h1 className="h1-font">YouTube Shorts Downloader</h1>
-      <p className="word">Download youtube shorts online for free to your device.</p>
+      <p className="word subtitle">Download youtube shorts online for free to your device.</p>
       <Container>
        <Row>
        <Col xs={12} md={12}>
@@ -204,7 +204,7 @@ const downloadVideo = () => {
         //style={{
       //  display: loading ? "none" : ""
       //  }}
-        className="mt-3 title"> {items.title} </h3>
+        className="mt-5 title"> {items.title} </h3>
        <ReactPlayer 
           className="mb-1 videocenter"
           
