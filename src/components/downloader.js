@@ -68,7 +68,13 @@ const downloadVideo = () => {
         window.open(`https://shortsloader.instavideosave.com/download?videoURL=${this.state.url}`, "_self");     
     }
     const downloadAudio = () => {
-        window.open(`https://shortsloader.instavideosave.com/audio/download?videoURL=${this.state.url}`, "_self");     
+        window.open(`https://powerful-forest-52012.herokuapp.com/download?videoId=${this.state.url}&type=mp3&itag=140downloadFormat=audio-only&quality=highest&title=${items.title .replace(
+          /[`~!@#$%^&*()_|+\-=?;:–'",.<>\{\}\[\]\\\/]/gi,
+          ""
+        )
+        .replace(/\s+/g, "-")
+        .toLowerCase()
+        .slice(0, 18) ?? items.title }`, "_self");     
     }
    // let color = items.statu < 10 ? 'zero' : (items.statu <= 30 ? 'searchbtn' : 'searchbtn');
 
@@ -203,7 +209,7 @@ const downloadVideo = () => {
           className="mb-3 videocenter"
           
           url={items.url} 
-          width="90%" height="50%" 
+          width="80%" height="50%" 
           controls={true} />
           <Button 
              variant="contained" 
