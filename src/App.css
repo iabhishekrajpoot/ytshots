@@ -143,3 +143,8 @@ h2 {
 .nav_link {
   text-decoration: none;
 }
+.title{
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+}
