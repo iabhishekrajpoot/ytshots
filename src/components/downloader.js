@@ -81,7 +81,7 @@ const downloadVideo = () => {
     return (
       <div>
       <h1 className="h1-font">YouTube Shorts Downloader</h1>
-      <p className="word subtitle">Download youtube shorts online for free to your device.</p>
+      <p className="word subtitle">Download youtube shorts online for free.</p>
       <Container>
        <Row>
        <Col xs={12} md={12}>
@@ -209,7 +209,7 @@ const downloadVideo = () => {
           className="mb-1 videocenter"
           
           url={items.url} 
-          width="60%" height="50%" 
+          width="65%" height="50%" 
           controls={true} />
           <Button 
              variant="contained" 
