@@ -19,7 +19,7 @@ export default class ButtonLoader extends Component {
   };
 
   fetchData = async() => {
-   await fetch("https://shortsloader.instavideosave.com/videoInfo?videoURL="+this.state.url)
+   await fetch("https://servevid.glitch.me/videoInfo?videoURL="+this.state.url)
       .then(res => res.json())
       .then(
         (result) => {
@@ -65,10 +65,10 @@ export default class ButtonLoader extends Component {
     
 //  };
 const downloadVideo = () => {
-        window.open(`https://shortsloader.instavideosave.com/download?videoURL=${this.state.url}`, "_self");     
+        window.open(`https://servevid.glitch.me/download?videoURL=${this.state.url}`, "_self");     
     }
     const downloadAudio = () => {
-        window.open(`https://powerful-forest-52012.herokuapp.com/download?videoId=${this.state.url}&type=mp3&itag=140downloadFormat=audio-only&quality=highest&title=${items.title .replace(
+        window.open(`https://servevid.glitch.me/download?videoId=${this.state.url}&type=mp3&itag=140downloadFormat=audio-only&quality=highest&title=${items.title .replace(
           /[`~!@#$%^&*()_|+\-=?;:–'",.<>\{\}\[\]\\\/]/gi,
           ""
         )
