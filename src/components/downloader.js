@@ -65,7 +65,7 @@ export default class ButtonLoader extends Component {
     
 //  };
 const downloadVideo = () => {
-        window.open(`https://servevid.glitch.me/videodl?URL=${this.state.url}&downloadFormat=audio-only&quality=high&title=${items.title.replace(/[^\x00-\x7F]/g, "").replace(/^(.{12}[^\s]*).*/, "$1")
+        window.open(`https://servevid.glitch.me/videodl?URL=${this.state.url}&downloadFormat=audioandvideo&quality=high&title=${items.title.replace(/[^\x00-\x7F]/g, "").replace(/^(.{12}[^\s]*).*/, "$1")
      ?? items.title }`, "_self");
     }
 
