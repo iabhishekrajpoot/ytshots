@@ -65,25 +65,14 @@ export default class ButtonLoader extends Component {
     
 //  };
 const downloadVideo = () => {
-        window.open(`https://servevid.glitch.me/videodl?URL=${this.state.url}&downloadFormat=audio-only&quality=high&title=${items.title .replace(
-          /[`~!@#$%^&*()_|+\-=?;:–'",.<>\{\}\[\]\\\/]/gi,
-          ""
-        )
-        .replace(/\s+/g, "-")
-        .replace(/(\u20E3)|[\xA9\xAE\u203C\u2047-\u2049\u2122\u2139\u3030\u303D\u3297\u3299][\uFE00-\uFEFF]?|[\u2190-\u21FF][\uFE00-\uFEFF]?|[\u2300-\u23FF][\uFE00-\uFEFF]?|[\u2460-\u24FF][\uFE00-\uFEFF]?|[\u25A0-\u25FF][\uFE00-\uFEFF]?|[\u2600-\u27BF][\uFE00-\uFEFF]?|[\u2900-\u297F][\uFE00-\uFEFF]?|[\u2B00-\u2BF0][\uFE00-\uFEFF]?|(?:\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDEFF])[\uFE00-\uFEFF]?/g, '')
-        .toLowerCase()
-        .slice(0, 20) ?? items.title }`, "_self");
+        window.open(`https://servevid.glitch.me/videodl?URL=${this.state.url}&downloadFormat=audio-only&quality=high&title=${items.title.replace(/[^\x00-\x7F]/g, "").replace(/^(.{12}[^\s]*).*/, "$1")
+     ?? items.title }`, "_self");
     }
 
     const downloadAudio = () => {
-        window.open(`https://servevid.glitch.me/mp3dl?videoId=${this.state.url}&type=mp3&itag=140&downloadFormat=audio-only&quality=highest&title=${items.title .replace(
-          /[`~!@#$%^&*()_|+\-=?;:–'",.<>\{\}\[\]\\\/]/gi,
-          ""
-        )
-        .replace(/\s+/g, "-")
-        .replace(/(\u20E3)|[\xA9\xAE\u203C\u2047-\u2049\u2122\u2139\u3030\u303D\u3297\u3299][\uFE00-\uFEFF]?|[\u2190-\u21FF][\uFE00-\uFEFF]?|[\u2300-\u23FF][\uFE00-\uFEFF]?|[\u2460-\u24FF][\uFE00-\uFEFF]?|[\u25A0-\u25FF][\uFE00-\uFEFF]?|[\u2600-\u27BF][\uFE00-\uFEFF]?|[\u2900-\u297F][\uFE00-\uFEFF]?|[\u2B00-\u2BF0][\uFE00-\uFEFF]?|(?:\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDEFF])[\uFE00-\uFEFF]?/g, '')
-        .toLowerCase()
-        .slice(0, 20) ?? items.title }`, "_self");     
+        window.open(`https://servevid.glitch.me/mp3dl?videoId=${this.state.url}&type=mp3&itag=140&downloadFormat=audio-only&quality=highest&title=${items.title.replace(/[^\x00-\x7F]/g, "")
+                    .replace(/^(.{12}[^\s]*).*/, "$1")
+                    ?? items.title }`, "_self");
     }
    // let color = items.statu < 10 ? 'zero' : (items.statu <= 30 ? 'searchbtn' : 'searchbtn');
 
