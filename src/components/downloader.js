@@ -7,7 +7,7 @@ import AudiotrackIcon from '@material-ui/icons/Audiotrack';
 import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 import ReactPlayer from "react-player";
 //import DownloadLink from "react-download-link";
-import LoadingBar from './loading';
+//import LoadingBar from './loading';
 
 export default class ButtonLoader extends Component {
   state = {
