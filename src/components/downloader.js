@@ -65,14 +65,14 @@ export default class ButtonLoader extends Component {
     
 //  };
 const downloadVideo = () => {
-        window.open(`https://servevid.glitch.me/videodl?URL=${this.state.url}&downloadFormat=audioandvideo&quality=high&title=${items.title.replace(/[^\x00-\x7F]/g, "").replace(/^(.{12}[^\s]*).*/, "$1")
+        window.open(`https://servevid.glitch.me/video?url=${encodeURIComponent(this.state.url)}&title=${items.title.replace(/[^\x00-\x7F]/g, "").replace(/^(.{12}[^\s]*).*/, "$1")
      ?? items.title }`, "_self");
     }
 
     const downloadAudio = () => {
         window.open(`https://servevid.glitch.me/mp3dl?videoId=${this.state.url}&type=mp3&itag=140&downloadFormat=audio-only&quality=highest&title=${items.title.replace(/[^\x00-\x7F]/g, "")
                     .replace(/^(.{12}[^\s]*).*/, "$1")
-                    ?? items.title }`, "_self");
+                    ?? items.title }.mp4`, "_self");
     }
    // let color = items.statu < 10 ? 'zero' : (items.statu <= 30 ? 'searchbtn' : 'searchbtn');
 
