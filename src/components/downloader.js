@@ -19,7 +19,7 @@ export default class ButtonLoader extends Component {
   };
 
   fetchData = async() => {
-   await fetch("https://servevid.glitch.me/videoInfo?videoURL="+this.state.url)
+   await fetch("https://shortsloader.glitch.me/videoInfo?videoURL="+this.state.url)
       .then(res => res.json())
       .then(
         (result) => {
@@ -65,7 +65,7 @@ export default class ButtonLoader extends Component {
     
 //  };
 const downloadVideo = () => {
-        window.open(`https://servevid.glitch.me/video?url=${encodeURIComponent(this.state.url)}&title=${items.title.replace(/[^\x00-\x7F]/g, "").replace(/^(.{12}[^\s]*).*/, "$1")
+        window.open(`https://shortsloader.glitch.me/video?url=${encodeURIComponent(this.state.url)}&title=${items.title.replace(/[^\x00-\x7F]/g, "").replace(/^(.{12}[^\s]*).*/, "$1")
      ?? items.title }`, "_self");
     }
 
