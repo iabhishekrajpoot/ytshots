@@ -19,7 +19,7 @@ export default class ButtonLoader extends Component {
   };
 
   fetchData = async() => {
-   await fetch("https://shortsloader.glitch.me/videoInfo?videoURL="+this.state.url)
+   await fetch("https://api.shortsloader.com/videoInfo?videoURL="+this.state.url)
       .then(res => res.json())
       .then(
         (result) => {
@@ -65,12 +65,12 @@ export default class ButtonLoader extends Component {
     
 //  };
 const downloadVideo = () => {
-        window.open(`https://shortsloader.glitch.me/dl?url=${encodeURIComponent(items.url)}&title=${items.title.replace(/[^\x00-\x7F]/g, "").replace(/^(.{12}[^\s]*).*/, "$1")
+        window.open(`https://api.shortsloader.com/dl?url=${encodeURIComponent(items.url)}&title=${items.title.replace(/[^\x00-\x7F]/g, "").replace(/^(.{12}[^\s]*).*/, "$1")
      ?? items.title }.mp4`, "_self");
     }
 
     const downloadAudio = () => {
-        window.open(`https://shortsloader.glitch.me/dl?url=${encodeURIComponent(items.audio)}&title=${items.title.replace(/[^\x00-\x7F]/g, "")
+        window.open(`https://api.shortsloader.com/dl?url=${encodeURIComponent(items.audio)}&title=${items.title.replace(/[^\x00-\x7F]/g, "")
                     .replace(/^(.{12}[^\s]*).*/, "$1")
                     ?? items.title }.mp3`, "_self");
     }
